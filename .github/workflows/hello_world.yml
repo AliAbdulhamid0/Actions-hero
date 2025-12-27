@@ -1,8 +1,15 @@
-name: hello world workflow 
+name: hello world with push and PR and manual event 
 
 
 
 on: 
+  push: 
+    branches: 
+      - main
+  pull_request:
+    branches: 
+      - main
+      
   workflow_dispatch: 
 
 
