@@ -1,0 +1,29 @@
+name: hello world workflow 
+
+
+
+on: 
+  push: 
+    branches: 
+      - main
+  pull_requests:
+    branches: 
+      - main
+  workflow_dispatch: 
+
+
+
+jobs:
+  hello_world: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: hello world 
+        run: echo " hello world" 
+
+
+  good_bay: 
+    runs-on: ubuntu-latest
+    steps: 
+      - name: good_bay
+        run: echo " good for test" 
+        
